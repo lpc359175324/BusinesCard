@@ -24,9 +24,6 @@ public class SendEmailService {
         @Autowired
         private JavaMailSender javaMailSender;
         
-        
-        
-        
         /**
          *文本邮件发送方法
          * @param to           收件人
