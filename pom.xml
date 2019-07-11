@@ -47,9 +47,9 @@
         </dependency>
         <!--热部署-->
         <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-devtools</artifactId>
-        <optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
         </dependency>
 
         <!--引入jquery-webjar-->
@@ -60,11 +60,11 @@
         </dependency>
 
         <!--导入es依赖 和 log4j日志依赖-->
-        <dependency>
-            <groupId>org.elasticsearch.client</groupId>
-            <artifactId>transport</artifactId>
-            <version>6.2.4</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.elasticsearch.client</groupId>-->
+        <!--<artifactId>transport</artifactId>-->
+        <!--<version>6.2.4</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
