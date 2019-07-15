@@ -14,6 +14,9 @@ import javax.mail.internet.MimeMessage;
 import java.io.File;
 import java.nio.file.FileSystem;
 
+/**
+ * @author lpc
+ */
 @Service
 @Component
 public class SendEmailService {

@@ -2,12 +2,20 @@ package com.businesscard.bill.modle;
 
 import lombok.*;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+import org.springframework.data.elasticsearch.annotations.Mapping;
+
 import javax.persistence.Id;
 
+/**
+ * @author lpc
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @RequiredArgsConstructor
+@Mapping
 @Document(indexName = "billing_info", type = "bill", shards = 1, replicas = 0, refreshInterval = "-1")
 public class BillingInfo {
         /**
@@ -20,6 +28,7 @@ public class BillingInfo {
          * 订单号
          */
         @NonNull
+        @Field(type = FieldType.Keyword)
         private String orderNumber;
         /**
          *交易号商家订单号

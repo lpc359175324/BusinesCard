@@ -7,6 +7,9 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 
 import java.util.List;
 
+/**
+ * @author lpc
+ */
 public interface BillingRepository extends ElasticsearchRepository<BillingInfo, String> {
         /**
          *获取订单信息
